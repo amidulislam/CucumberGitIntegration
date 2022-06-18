@@ -14,8 +14,7 @@ public class SelniumDemo {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("slc3000blog");
-		driver.findElement(By.xpath("(//input[@name='btnK'])[2]")).click();
-		ReusableUtility.getInstance().staticWaitForMillis(5000);	
+		driver.findElement(By.xpath("(//input[@name='btnK'])[2]")).click();		
 		driver.quit();
 	}
 }
