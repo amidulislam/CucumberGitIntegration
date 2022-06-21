@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.utility.ReusableUtility;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SelniumDemo {
