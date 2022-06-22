@@ -28,14 +28,14 @@ Triplet Qualified Indexes value:
 Total number of triplets present in the list satisfying desired capacity:1 
  */
 
-public class Triplets {
+public class Triplet {
 	List<ArrayList<Integer>> executedList = new ArrayList<ArrayList<Integer>>();
 	List<ArrayList<Integer>> listTripletQualified = new ArrayList<ArrayList<Integer>>();
 	static List<ArrayList<Integer>> listPossibleCombinations = new ArrayList<ArrayList<Integer>>();
 	int r = 3;
 
 	public static void main(String args[]) {
-		Triplets obj = new Triplets();
+		Triplet obj = new Triplet();
 		ArrayList<Integer> capacity = new ArrayList<>(List.of(1, 4, 2, 5));
 		System.out.println(capacity);
 		int desiredCpacity = 10;
@@ -52,7 +52,7 @@ public class Triplets {
 		listPossibleCombinations.clear();
 		combination(IntStream.range(0, capacity.size()).toArray(), data, 0, capacity.size() - 1, 0, r);
 		System.out.println("\nPossible triplest indexes from given capacity\n" + listPossibleCombinations);
-		Triplets obj = new Triplets();
+		Triplet obj = new Triplet();
 		long tripletCount = 0;
 		boolean statsuDesiredCapacity = false;
 

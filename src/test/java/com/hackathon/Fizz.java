@@ -1,10 +1,7 @@
 package com.hackathon;
-
-public class FizzBuzz {
-	
-
+public class Fizz {
 	public static void main(String[] args) {
-		FizzBuzz obj=new FizzBuzz();
+		Fizz obj=new Fizz();
 		obj.printFizzBuzz(15);
 	}
 
@@ -28,3 +25,4 @@ public class FizzBuzz {
 		}
 	}
 }
+
