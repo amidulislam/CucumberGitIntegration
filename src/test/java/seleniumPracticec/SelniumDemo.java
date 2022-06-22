@@ -1,5 +1,7 @@
 package seleniumPracticec;
 
+import java.time.LocalDate;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,12 +10,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SelniumDemo {
 	public static void main(String args[]) {		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("slc3000blog");
-		driver.findElement(By.xpath("(//input[@name='btnK'])[2]")).click();		
-		driver.quit();
+		
+		LocalDate today = LocalDate.now();
+	    int currentYear = today.getYear();
+	    System.out.println(String.format("//div[text()='%d']", currentYear));
 	}
 }
 
