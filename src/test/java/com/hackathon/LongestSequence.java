@@ -3,6 +3,10 @@ package com.hackathon;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/* This program used to find the longest list of 1s and 0s. It will display
+ * the max length of consequtive and 1s and 0s
+ */
 public class LongestSequence {
 	public void displayLongestSequence(int a[]) {
 		int previousValue = a[0];
